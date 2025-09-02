@@ -1,9 +1,21 @@
-# DNSControl Action
+# CF-DNSControl Action
 
-![](https://github.com/koenrh/dnscontrol-action/workflows/build/badge.svg)
+[![build](https://github.com/amaan-igs/dnscontrol-action/actions/workflows/build.yml/badge.svg)](https://github.com/amaan-igs/dnscontrol-action/actions/workflows/build.yml)
 
-Deploy your DNS configuration using [GitHub Actions](https://github.com/actions)
-using [DNSControl](https://github.com/StackExchange/dnscontrol/).
+
+Deploy your DNS configuration using [GitHub Actions](https://github.com/actions) and [DNSControl](https://github.com/StackExchange/dnscontrol/).
+
+## References
+
+- **Action Name:** CF-DNSControl Action
+- **Usage:**
+  ```yaml
+  - name: CF-DNSControl Action
+    uses: amaan-igs/dnscontrol-action@v1
+  ```
+- **Author:** Amaan Ul Haq Siddiqui
+- **GitHub:** [amaan-igs](https://github.com/amaan-igs)
+- **Email:** amaanulhaq.s@outlook.com
 
 ## Usage
 
@@ -27,7 +39,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: DNSControl check
-        uses: koenrh/dnscontrol-action@v3
+  uses: amaan-igs/dnscontrol-action@v1
         with:
           args: check
 
@@ -54,7 +66,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: DNSControl preview
-        uses: koenrh/dnscontrol-action@v3
+        uses: amaan-igs/dnscontrol-action@v1
         id: dnscontrol_preview
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -134,7 +146,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: DNSControl push
-        uses: koenrh/dnscontrol-action@v3
+        uses: amaan-igs/dnscontrol-action@v1
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         with:
