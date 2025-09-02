@@ -22,9 +22,8 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Preview
-        uses: koenrh/dnscontrol-action@v3
+        uses: amaan-igs/dnscontrol-action@v1
         env:
           CLOUDFLARE_API_KEY: ${{ secrets.CLOUDFLARE_API_KEY }}
-          CLOUDFLARE_API_USER: ${{ secrets.CLOUDFLARE_API_USER }}
         with:
           args: preview
