@@ -3,7 +3,7 @@ FROM alpine:3
 LABEL repository="https://github.com/amaan-igs/dnscontrol-action"
 LABEL maintainer="amaan-igs <amaanulhaq.s@outlook.com>"
 
-LABEL "com.github.actions.name"="DNSControl Action"
+LABEL "com.github.actions.name"="CF-DNSControl Action"
 LABEL "com.github.actions.description"="Deploy your DNS configuration to multiple providers using GitHub Actions. Easily automate DNS updates across providers."
 LABEL "com.github.actions.icon"="cloud"
 LABEL "com.github.actions.color"="orange"

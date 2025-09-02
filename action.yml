@@ -1,5 +1,5 @@
 ---
-name: DNSControl Action
+name: CF-DNSControl Action
 description: Deploy your DNS configuration to multiple providers using GitHub Actions. Easily automate DNS updates across providers.
 author: Amaan Ul Haq Siddiqui <amaanulhaq.s@outlook.com>
 branding:
