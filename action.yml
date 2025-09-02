@@ -1,10 +1,10 @@
 ---
 name: DNSControl Action
-description: Deploy your DNS configuration to multiple providers
-author: Koen Rouwhorst <info@koenrouwhorst.nl>
+description: Deploy your DNS configuration to multiple providers using GitHub Actions. Easily automate DNS updates across providers.
+author: Amaan Ul Haq Siddiqui <amaanulhaq.s@outlook.com>
 branding:
   icon: cloud
-  color: yellow
+  color: orange
 inputs:
   args:
     description: DNSControl command
